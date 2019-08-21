@@ -52,7 +52,6 @@ class SocialSignIn
 
     public function subcribeIfNewUser($email)
     {
-
         if (!$this->subcriptionService->isSubscribed($email)) {
             if ($this->subcriptionService->eligibleForExtendedTrial($email)) {
 
